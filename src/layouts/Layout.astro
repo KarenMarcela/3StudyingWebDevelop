@@ -1,0 +1,115 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-yellow-50/65">
+		<slot />
+		<header class="flex p-10  ">
+			<img class="w-44" src="https://velvethammer.net/app/uploads/2018/08/VHlogo-new1.png" alt="">
+			<menu class="ml-[700px] flex space-x-20">
+				<a href="#">Inicio</a>
+				<a href="#">Inicio</a>
+				<a href="#">Inicio</a>
+				<a href="#">Inicio</a>
+			</menu>
+			<div class="ml-96">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="size-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+					></path>
+				</svg>
+			</div>
+		</header>
+		<section class="banner1  bg-[url(https://upload.wikimedia.org/wikipedia/commons/0/06/Velvet_Hammer_Music_and_Management.png)] bg-[length:100%_100%] h-[600px] text-white">
+			<!-- <img class=" mx-auto w-[700px] h-[500px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7x8PB4iSOGla_fpJI6P2srZlKkLPPToKsw&s" alt="Imagen"> -->
+			
+		</section>
+		<section class="bannerPrincipal ">
+			<div class="w-[1300px] bg-white flex mx-auto p-5">
+				<p >"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est, vel beatae aperiam tempore unde officia quas recusandae temporibus maxime veritatis fuga inventore quis suscipit provident quo facilis sunt natus, nam sit quam quia hic voluptate. Mollitia, officia molestias dolorem harum minus consequatur quisquam illo earum, aliquid et suscipit inventore!"</p>
+			</div>
+			<div class="w-[1200px] flex space-x-4 mx-auto mt-5">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+			</div>
+			<div class="w-[1200px] flex space-x-4 mx-auto">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+				<img class="w-[300px]" src="https://thumbs.dreamstime.com/b/knights-emblem-template-medieval-knight-helmet-design-element-logo-label-emblem-sign-knights-emblem-template-114272202.jpg" alt="">
+			</div>
+			<section class="banner1 mt-5 flex space-x-2  w-[1200px] mx-auto bg-white">
+				<div class="p-16 pl-[100px]   w-[600px]">
+					<p>Velvet Hammer has created a modern-day standard for independent music companies. This innovative and dedicated outfit handles all of the multifaceted components of its clients’ careers, including A&R, production, marketing, branding, touring, etc…</p>
+					<p class="mt-4">Velvet Hammer has created a modern-day standard for independent music companies. This innovative and dedicated outfit handles all of the multifaceted components of its clients’ careers, including A&R, production, marketing, branding, touring, etc…</p>
+				</div>
+				<div class="p-16 pr-[100px]  w-[600px]">
+					<p>Velvet Hammer has created a modern-day standard for independent music companies. This innovative and dedicated outfit handles all of the multifaceted components of its clients’ careers, including A&R, production, marketing, branding, touring, etc…</p>
+					<p class="mt-4">Velvet Hammer has created a modern-day standard for independent music companies. This innovative and dedicated outfit handles all of the multifaceted components of its clients’ careers, including A&R, production, marketing, branding, touring, etc…</p>
+				</div>
+				
+			</section>
+			<section class="banner2">
+				<div class="flex space-x-5 justify-center">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+				</div>
+				<div class="flex space-x-5 justify-center mt-5">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+					<img class="w-[250px]" src="https://velvethammer.net/app/uploads/2018/09/IMG_6944-300x300.jpg" alt="">
+				</div>
+			</section>
+			<footer class="bg-black h-[460px] w-[1200px] flex mx-auto mt-5 text-white ">
+				<div class="flex flex-col w-[600px]  justify-center items-center space-y-4 ml-[100px]">
+					<h1>OUR PEOPLE</h1>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+				</div>
+				<div class="flex flex-col w-[600px] justify-center items-center space-y-4 mr-[100px]">
+					<h1>OUR PEOPLE</h1>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+					<h2>David Benveniste (Beno)</h2>
+				</div>
+
+			</footer>
+		</section>
+		
+		<img class="w-44 mt-[100px] flex mx-auto mb-[100px]" src="https://velvethammer.net/app/uploads/2018/08/VHlogo-new1.png" alt="">
+		
+	</body>
+</html>
